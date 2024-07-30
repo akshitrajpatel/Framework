@@ -8,7 +8,7 @@ pipeline
         {
             steps 
             {
-                build 'JulySampleJob'
+                sh 'mvn test'  // Run Maven tests, for example
             }
         }
         stage('Smoke Test') 
